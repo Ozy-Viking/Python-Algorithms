@@ -1,9 +1,9 @@
-from sorting_algorithms import PythonSort, SortingAlgorithm
+from python_algorithms.sorting import PythonSort, ISortingAlgorithm
 from test import *
 
 
 def test_pythonsort_type_class(unsorted_list) -> None:
-    assert isinstance(PythonSort(unsorted_list), SortingAlgorithm)
+    assert isinstance(PythonSort(unsorted_list), ISortingAlgorithm)
 
 
 def test_pythonsort_sorted(unsorted_list, sorted_list) -> None:
@@ -50,5 +50,7 @@ def test_pythonsort_string(
     reverse_sorted_str_list: list[str],
 ) -> None:
 
-    assert (PythonSort(unsorted_str_list).sort(reverse=True).sorting_list 
-            == reverse_sorted_str_list)
+    assert (
+        PythonSort(unsorted_str_list).sort(reverse=True).sorting_list
+        == reverse_sorted_str_list
+    )

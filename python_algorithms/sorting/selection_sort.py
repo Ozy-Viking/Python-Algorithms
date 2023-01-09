@@ -1,5 +1,5 @@
 from typing import Self
-from sorting_algorithms import *
+from sorting import *
 
 
 @dataclass

@@ -1,9 +1,9 @@
-from sorting_algorithms import MergeSort, SortingAlgorithm
+from python_algorithms.sorting import MergeSort, ISortingAlgorithm
 from test import *
 
 
 def test_mergesort_type_class(unsorted_list) -> None:
-    assert isinstance(MergeSort(unsorted_list), SortingAlgorithm)
+    assert isinstance(MergeSort(unsorted_list), ISortingAlgorithm)
 
 
 def test_mergesort_sorted(unsorted_list, sorted_list) -> None:

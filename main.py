@@ -1,25 +1,16 @@
-from random import Random
+import pathlib
+import os
+from icecream import ic
 
-from sorting_algorithms import *
+config = list()
+with open("pyproject copy.toml", "r") as f:
+    for line in f.readlines():
+        config.append(line.strip(f"{str(0xff)}"))
 
-
-# my_list = list(range(10))
-# ic(my_list[1::-1])
-# my_list.reverse()
-# Random(1).shuffle(my_list)
-my_list = [(2, 2), (3, 4), (4, 1), (1, 3)]
-sort_algo = MergeSort(my_list)
-# ic(sort_algo.sorting_list)
-sort_algo = sort_algo.sort(key=lambda x: x[1])
-# sorted = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-sorted = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-ic(sort_algo.sorting_list == sorted)
-ic(sort_algo.sorting_list)
-
-str_list = [
-    "ab",
-    "aaa",
-    "aaz",
-]
-str_list.sort(reverse=True)
-ic(str_list)
+print(config)
+for character in config[0]:
+    ic(ord(character), str(character))
+pathlib.Path("pyproject.toml").unlink(missing_ok=True)
+with open("pyproject.toml", "x") as f:
+    for line in config:
+        f.write(line)

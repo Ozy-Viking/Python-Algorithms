@@ -1,9 +1,9 @@
-from sorting_algorithms import SelectionSort, SortingAlgorithm
+from python_algorithms.sorting import SelectionSort, ISortingAlgorithm
 from test import *
 
 
 def test_selectionsort_type_class(unsorted_list) -> None:
-    assert isinstance(SelectionSort(unsorted_list), SortingAlgorithm)
+    assert isinstance(SelectionSort(unsorted_list), ISortingAlgorithm)
 
 
 def test_selectionsort_sorted(unsorted_list, sorted_list) -> None:
@@ -38,6 +38,7 @@ def test_selectionsort_sort_reverse_key(
         == reverse_sorted_tuple_list
     )
 
+
 def test_selectionsort_string(
     unsorted_str_list: list[str],
     sorted_str_list: list[str],
@@ -51,5 +52,7 @@ def test_selectionsort_string(
     reverse_sorted_str_list: list[str],
 ) -> None:
 
-    assert (SelectionSort(unsorted_str_list).sort(reverse=True).sorting_list 
-            == reverse_sorted_str_list)
+    assert (
+        SelectionSort(unsorted_str_list).sort(reverse=True).sorting_list
+        == reverse_sorted_str_list
+    )

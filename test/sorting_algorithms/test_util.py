@@ -1,4 +1,4 @@
-from sorting_algorithms import swap, SortingAlgorithm
+from python_algorithms.sorting import swap, ISortingAlgorithm
 from test import *
 
 
@@ -32,8 +32,9 @@ def test_swap_same_index(unswaped_list: list[int]) -> None:
 
 
 def test_sorting_algorithm() -> None:
-    assert hasattr(SortingAlgorithm,'sort')
-    
+    assert hasattr(ISortingAlgorithm, "sort")
+
+
 def test_sorting_algorithm_sort(unswaped_list: list[int]) -> None:
     with pytest.raises(TypeError):
-        SortingAlgorithm(unswaped_list)
+        ISortingAlgorithm(unswaped_list)

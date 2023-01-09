@@ -1,9 +1,9 @@
-from sorting_algorithms import InsertionSort, SortingAlgorithm
+from python_algorithms.sorting import InsertionSort, ISortingAlgorithm
 from test import *
 
 
 def test_insertionsort_type_class(unsorted_list) -> None:
-    assert isinstance(InsertionSort(unsorted_list), SortingAlgorithm)
+    assert isinstance(InsertionSort(unsorted_list), ISortingAlgorithm)
 
 
 def test_insertionsort_sorted(unsorted_list, sorted_list) -> None:

@@ -14,7 +14,7 @@ __all__: list[str] = [
 
 from .util import *
 
-__all__ += ["swap", "SortingAlgorithm"]
+__all__ += ["swap", "ISortingAlgorithm"]
 
 from .builtin_sort import PythonSort
 
