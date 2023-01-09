@@ -1,4 +1,4 @@
-from sorting import *
+from python_algorithms.sorting  import *
 
 
 @dataclass
@@ -10,7 +10,7 @@ class MergeSort:
         self,
         reverse: bool = False,
         key: Optional[Callable[[Any], Any]] = None,
-    ) -> Self:
+    ) -> 'MergeSort':
         if reverse:
             self.condition = lambda x, y: x >= y
         if key:

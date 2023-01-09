@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Any, Callable, Optional, Protocol, Self, runtime_checkable
+from typing import Any, Callable, Optional, Protocol, runtime_checkable
 
 
 def swap(sorting_list: list, intial_index: int, ending_index: int) -> None:
@@ -33,7 +33,7 @@ class ISortingAlgorithm(Protocol):
         self,
         reverse: bool = False,
         key: Optional[Callable[[Any], Any]] = None,
-    ) -> Self:
+    ):
         """
         sort
 

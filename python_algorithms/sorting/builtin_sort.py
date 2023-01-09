@@ -1,4 +1,4 @@
-from sorting import *
+from python_algorithms.sorting import *
 
 
 @dataclass
@@ -7,6 +7,6 @@ class PythonSort:
 
     def sort(
         self, reverse: bool = False, key: Optional[Callable[[Any], Any]] = None
-    ) -> Self:
+    ) -> "PythonSort":
         self.sorting_list.sort(reverse=reverse, key=key)
         return self

@@ -1,15 +1,16 @@
+from __future__ import annotations
 from dataclasses import dataclass
 from icecream import ic
-from typing import Any, Callable, Optional, Protocol, Self
+from typing import Any, Callable, Optional, Protocol
 
 __all__: list[str] = [
+    "annotations",
     "Any",
     "Callable",
     "Optional",
     "Protocol",
     "dataclass",
     "ic",
-    "Self",
 ]
 
 from .util import *

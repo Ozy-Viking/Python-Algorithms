@@ -1,8 +1,5 @@
 site_name: Python Algorithms
 site_url: http://127.0.0.1:8000/
-# nav:
-#     - Home: index.md
-#     - Sorting: sorting\sorting.md
 theme:
     name: mkdocs
     highlightjs: true

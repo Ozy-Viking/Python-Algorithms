@@ -1,4 +1,4 @@
-from sorting import *
+from python_algorithms.sorting  import *
 
 
 @dataclass
@@ -10,7 +10,7 @@ class BubbleSort:
         self,
         reverse: bool = False,
         key: Optional[Callable[[Any], Any]] = None,
-    ) -> Self:
+    ) -> 'BubbleSort':
 
         if key:
             self.key_sort(reverse=reverse, key=key)

@@ -2,21 +2,8 @@
 
 This module contains self written algorithms for learning Python.
 
----
+## Algorithms in Module
 
-## Sorting
-
-
----
-
-## Pathfinding
-
-Todo: A* 
-
----
-
-## Search
-
-todo: Binary Search
-
----
+1. Sorting
+2. Pathfinding
+3. Search

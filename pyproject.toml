@@ -25,5 +25,5 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
-addopts = "--cov=sorting_algorithms"
+addopts = "--cov=python_algorithms"
 testpaths = ["test",]

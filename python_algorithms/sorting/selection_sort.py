@@ -1,5 +1,4 @@
-from typing import Self
-from sorting import *
+from python_algorithms.sorting  import *
 
 
 @dataclass
@@ -8,7 +7,7 @@ class SelectionSort:
 
     def sort(
         self, reverse: bool = False, key: Optional[Callable[[Any], Any]] = None
-    ) -> Self:
+    ) -> 'SelectionSort':
         if key:
             self.sorting_list = self.key_sort(reverse=reverse, key=key)
         else:

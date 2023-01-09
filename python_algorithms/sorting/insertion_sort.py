@@ -1,4 +1,4 @@
-from sorting import *
+from python_algorithms.sorting  import *
 
 
 @dataclass
@@ -9,7 +9,7 @@ class InsertionSort:
         self,
         reverse: bool = False,
         key: Optional[Callable[[Any], Any]] = None,
-    ) -> Self:
+    ) -> 'InsertionSort':
         if key:
             self.key_sort(key=key, reverse=reverse)
         else:
