@@ -103,7 +103,7 @@ files = [
 name = "coverage"
 version = "7.0.4"
 description = "Code coverage measurement for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -704,4 +704,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "d8b993e28a0194b790fd05069f1fb0c7855d48b8bd85190909f9230c7a943cc9"
+content-hash = "1b3f35058bac91966ced10a40a3e8461b60a85f079ff2f6e5cef63a3505cd26c"
