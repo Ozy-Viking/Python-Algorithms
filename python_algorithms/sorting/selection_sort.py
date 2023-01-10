@@ -64,7 +64,7 @@ class SelectionSort:
             list[Any]: Sorted sequence.
         """
         condition: Callable[[Any, Any], bool] = (
-            lambda x, y: bool(x < y) if reverse else bool(x > y)
+            lambda x, y: bool(x > y) if reverse else bool(x < y)
         )
 
         for i, number in enumerate(sorting_list):
