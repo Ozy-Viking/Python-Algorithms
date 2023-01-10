@@ -16,6 +16,9 @@ pytest = "^7.2.0"
 mypy = "^0.991"
 pytest-cov = "^4.0"
 coverage = "^7.0.3"
+tox = "^4.2.6"
+pylint = "^2.15.10"
+autopep8 = "^2.0.1"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.2"
@@ -27,3 +30,17 @@ build-backend = "poetry.core.masonry.api"
 [tool.pytest.ini_options]
 addopts = "--cov=python_algorithms"
 testpaths = ["test",]
+
+[tool.mypy]
+mypy_path = "python_algorithms"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
